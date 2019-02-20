@@ -1,0 +1,47 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>SaveFriend</servlet-name>
+  	<display-name>SaveFriend</display-name>
+  	<description></description>
+  	<servlet-class>com.ssi.SaveFriend</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ShowFriend</servlet-name>
+  	<display-name>ShowFriend</display-name>
+  	<description></description>
+  	<servlet-class>com.ssi.ShowFriend</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ShowFriendByName</servlet-name>
+  	<display-name>ShowFriendByName</display-name>
+  	<description></description>
+  	<servlet-class>com.ssi.ShowFriendByName</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ShowAllFriends</servlet-name>
+  	<display-name>ShowAllFriends</display-name>
+  	<description></description>
+  	<servlet-class>com.ssi.ShowAllFriends</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>SaveFriend</servlet-name>
+  	<url-pattern>/SaveFriend</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ShowFriend</servlet-name>
+  	<url-pattern>/ShowFriend</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ShowFriendByName</servlet-name>
+  	<url-pattern>/ShowFriendByName</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ShowAllFriends</servlet-name>
+  	<url-pattern>/ShowAllFriends</url-pattern>
+  </servlet-mapping>
+</web-app>
