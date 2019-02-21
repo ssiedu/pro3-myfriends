@@ -18,14 +18,17 @@ public class ShowFriendByName extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		PrintWriter out=response.getWriter();
 		String fname=request.getParameter("fname");
-		Session session=Data.getSF().openSession();
+		
+		FriendDAO dao=new FriendDAO();
+		List<Friend> flist=dao.searchByName(fname);
+		
+		
+		/*Session session=Data.getSF().openSession();
 		//fetching using QBC
 		Criteria cr=session.createCriteria(Friend.class);
 		Criterion crt=Restrictions.eq("fname", fname);
 		cr.add(crt);
-		List<Friend> flist=cr.list();
-		
-		
+		List<Friend> flist=cr.list();*/
 		
 		/*
 		//fetching using HQL

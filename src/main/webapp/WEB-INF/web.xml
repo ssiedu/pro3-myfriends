@@ -28,6 +28,12 @@
   	<description></description>
   	<servlet-class>com.ssi.ShowAllFriends</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>DeleteFriend</servlet-name>
+  	<display-name>DeleteFriend</display-name>
+  	<description></description>
+  	<servlet-class>com.ssi.DeleteFriend</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>SaveFriend</servlet-name>
   	<url-pattern>/SaveFriend</url-pattern>
@@ -43,5 +49,9 @@
   <servlet-mapping>
   	<servlet-name>ShowAllFriends</servlet-name>
   	<url-pattern>/ShowAllFriends</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>DeleteFriend</servlet-name>
+  	<url-pattern>/DeleteFriend</url-pattern>
   </servlet-mapping>
 </web-app>

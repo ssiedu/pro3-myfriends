@@ -30,11 +30,17 @@ public class SaveFriend extends HttpServlet {
 		String email=request.getParameter("email");
 		//store to DB
 		Friend f=new Friend(fcode,fname,address,mobile,email);
-		Session session=Data.getSF().openSession();
+		FriendDAO dao=new FriendDAO();
+		dao.addFriend(f);
+		
+		
+		/*
+		 * Session session=Data.getSF().openSession();
 		Transaction tr=session.beginTransaction();
 		session.save(f);
 		tr.commit();
 		session.close();
+		*/
 		//response
 		PrintWriter out=response.getWriter();
 		

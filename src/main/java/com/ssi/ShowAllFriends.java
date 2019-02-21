@@ -22,10 +22,15 @@ public class ShowAllFriends extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 	
 		PrintWriter out=response.getWriter();
-		Session session=Data.getSF().openSession();
+		
+		FriendDAO dao=new FriendDAO();
+		List<Friend> flist=dao.getAllFriends();
+		
+		
+		/*Session session=Data.getSF().openSession();
 		//fetching using QBC
 		Criteria cr=session.createCriteria(Friend.class);
-		List<Friend> flist=cr.list();
+		List<Friend> flist=cr.list();*/
 		
 		
 		

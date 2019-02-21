@@ -22,8 +22,13 @@ public class ShowFriend extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		String fcode=request.getParameter("fcode");
+		FriendDAO dao=new FriendDAO();
+		Friend f=dao.searchById(fcode);
+		/*
 		Session session=Data.getSF().openSession();
 		Friend f=session.get(Friend.class, fcode);
+		*/
+		
 		PrintWriter out=response.getWriter();
 		out.println("<html>");
 		out.println("<body>");
@@ -51,7 +56,7 @@ public class ShowFriend extends HttpServlet {
 		out.println("<h5><a href=index.jsp>Home</a></h5>");
 		out.println("</body>");
 		out.println("</html>");
-		session.close();
+		//session.close();
 		out.close();
 		
 	}

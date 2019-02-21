@@ -7,7 +7,7 @@
 		<a href="search.jsp">Search-Friend-By-Id</a>
 		<a href="searchbyname.jsp">Search-Friend-By-Name</a>
 		<a href="ShowAllFriends">View-All-Friends</a>
-		<a href="">Remove-Friend</a>
+		<a href="removefriend.jsp">Remove-Friend</a>
 		<a href="">Update-Friend</a>
 	</pre>
 <hr>
