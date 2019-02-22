@@ -34,6 +34,18 @@
   	<description></description>
   	<servlet-class>com.ssi.DeleteFriend</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>RemoveFriend</servlet-name>
+  	<display-name>RemoveFriend</display-name>
+  	<description></description>
+  	<servlet-class>com.ssi.RemoveFriend</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>RemoveAll</servlet-name>
+  	<display-name>RemoveAll</display-name>
+  	<description></description>
+  	<servlet-class>com.ssi.RemoveAll</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>SaveFriend</servlet-name>
   	<url-pattern>/SaveFriend</url-pattern>
@@ -53,5 +65,13 @@
   <servlet-mapping>
   	<servlet-name>DeleteFriend</servlet-name>
   	<url-pattern>/DeleteFriend</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>RemoveFriend</servlet-name>
+  	<url-pattern>/RemoveFriend</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>RemoveAll</servlet-name>
+  	<url-pattern>/RemoveAll</url-pattern>
   </servlet-mapping>
 </web-app>
