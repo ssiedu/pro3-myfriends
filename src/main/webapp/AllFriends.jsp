@@ -1,3 +1,10 @@
+<%!
+	String convert(String s){
+		return s.toUpperCase();
+    }
+
+%>
+
 <%
 	com.ssi.FriendDAO dao=new com.ssi.FriendDAO();
 	java.util.List<com.ssi.Friend> flist=dao.getAllFriends();
@@ -14,18 +21,18 @@
 
 <%
 	for(com.ssi.Friend f:flist){
-		String fcode=f.getFcode();
-		String fname=f.getFname();
+		//String fcode=f.getFcode();
+		String fname=convert(f.getFname());
 		String address=f.getAddress();
 		String mobile=f.getMobile();
 		String email=f.getEmail();
 %>
 <tr>
-<td><%out.println(fcode);%></td>
-<td><%out.println(fname);%></td>
-<td><%out.println(address);%></td>
-<td><%out.println(mobile);%></td>
-<td><%out.println(email);%></td>
+<td><%=convert(f.getFcode())%></td>
+<td><%=fname%></td>
+<td><%=address%></td>
+<td><%=mobile%></td>
+<td><%=email%></td>
 </tr>
 <%
 	}
